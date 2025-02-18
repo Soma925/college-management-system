@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/course.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.1-web/css/all.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  
+  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#mylogin">Login</a>
+  
+  <div class="modal fade" id="mylogin" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" id="content-1">
+        <div class="modal-body">
+          <div class="container-fluid fom-page">
+            <div class="row">
+              <div class="col">
+                <button class="close c-icon" id="closeo" data-dismiss="modal"><span class="x">&times;</span></button>
+              </div>
+            </div>
+            <div class='button-box'>
+              <div id='btn'></div>
+              <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+              <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <div class="row">
+              <div class="col">
+                <form class="from-inline input-group-login" id='login'>
+                  <h1 class="text-center">LOG IN</h1>
+                  <div class="lg-ul"></div>
+                  <div class="main-form">
+                    <div class="form-group">
+                      <i class="fas fa-user-circle form-icon"></i>
+                      <label for="log-name">User Name or E-mail</label>
+                      <input type="text" class="form-control" id="log-name" placeholder="Enter User Name or E-mail" autocomplete="off" required>
+                      <h6 id="log-name-check" class="h6-check"></h6>
+                  </div>
+                  <div class="form-group">
+                      <i class="fas fa-lock form-icon"></i>
+                      <label for="log-pass">Password</label>
+                      <input type="password" class="form-control password1" id="log-pass" minlength="7" maxlength="12" placeholder="Enter Password" required>
+                      <h6 id="log-pass-check" class="h6-check"></h6>
+                      <small class="form-text text-muted">Your Password must be 4 Characters and 3 digit </small>
+                    </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input type="checkbox"><small>Remember me</small>
+                      </div>
+                      <div class="col-md-6">
+                          <a href="#" data-toggle="modal" data-target="#myforgetpassword" data-dismiss="modal"><p class="text-right">Forget Password</p></a>
+                      </div>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn btn-denger btn-block" id="log-btn">LOGIN</button>
+                  <p class="hh text-center">Not a member yet? <a class="sign-link" data-toggle="modal" data-target="#mysignup" data-dismiss="modal">Sign Up</a></p>
+                </form>
+
+                <form class="from-inline input-group-register"id='register'>
+                  <h1 class="text-center">register</h1>
+                  <div class="lg-ul"></div>
+                  <div class="main-form">
+                    <div class="form-group">
+                      <i class="fas fa-user-circle form-icon"></i>
+                      <label for="log-name">User Name or E-mail</label>
+                      <input type="text" class="form-control" id="log-name" placeholder="Enter User Name or E-mail" autocomplete="off" required>
+                      <h6 id="log-name-check" class="h6-check"></h6>
+                  </div>
+                  <div class="form-group">
+                      <i class="fas fa-lock form-icon"></i>
+                      <label for="log-pass">Password</label>
+                      <input type="password" class="form-control password1" id="log-pass" minlength="7" maxlength="12" placeholder="Enter Password" required>
+                      <h6 id="log-pass-check" class="h6-check"></h6>
+                      <small class="form-text text-muted">Your Password must be 4 Characters and 3 digit </small>
+                    </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <input type="checkbox"><small>Remember me</small>
+                      </div>
+                      <div class="col-md-6">
+                          <a href="#" data-toggle="modal" data-target="#myforgetpassword" data-dismiss="modal"><p class="text-right">Forget Password</p></a>
+                      </div>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn btn-denger btn-block" id="log-btn">LOGIN</button>
+                  <p class="hh text-center">Not a member yet? <a class="sign-link" data-toggle="modal" data-target="#mysignup" data-dismiss="modal">Sign Up</a></p>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+
+
+<!--==========================================-->
+<div class="full-page">
+    <div class="form-box">
+      <div class='button-box'>
+          <div id='btn'></div>
+          <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+          <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+      </div>
+      <form id='login' class='input-group-login'>
+        <input type='text'class='input-field'placeholder='Email Id' required >
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+      </form>
+      <form id='register' class='input-group-register'>
+        <input type='text'class='input-field'placeholder='First Name' required>
+        <input type='text'class='input-field'placeholder='Last Name ' required>
+        <input type='email'class='input-field'placeholder='Email Id' required>
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='password'class='input-field'placeholder='Confirm Password'  required>
+        <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+              <button type='submit'class='submit-btn'>Register</button>
+      </form>
+    </div>
+  </div>
+<script>
+    var x=document.getElementById('login');
+var y=document.getElementById('register');
+var z=document.getElementById('btn');
+function register()
+{
+  x.style.left='-400px';
+  y.style.left='50px';
+  z.style.left='110px';
+  
+}
+function login()
+{
+  x.style.left='50px';
+  y.style.left='450px';
+  z.style.left='0px';
+}
+</script>
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>
